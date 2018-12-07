@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de">  <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+    <title>QuickPlate</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/cssLogin.css" rel="stylesheet" />
+    <link rel="icon" href="images/qp.ico" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body onload="numero()">     
+        
+    <!-- Start Navigation -->
+    <div class="menu">
+<nav class="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav navbar-mobile bootsnav">
+
+    <div class="container">      
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+             <a class="navbar-brand" href="index.html">
+                
+                <img src="images/logo-white.png" class="logo logo-display" alt="">
+                <img src="images/logo-black.png" class="logo logo-scrolled" alt="">
+
+            </a>
+        <!-- End Header Navigation -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                <li class><a href="#" class="transparente"><p class="transparente"> 	</p></a></li>                    	  
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>   
+</nav>
+</div>
+<div id="cadastro">
+ 			<div class="cimacad">
+                    <div class="tudocad">
+                        <div class="container">
+						<div class="logon">
+						<div id="login">
+						<div class="teste2"><h1 class="letra2">SEJA BEM-VINDO</h1></div>
+						<div class="teste"><h2 class="letra">USERNAME</h2><input class="name" type="email" placeholder="Usuário" id="email_field"/></div>
+						<div class="teste"><h2 class="letra">PASSWORD</h2><input class="name" type="password" placeholder="Senha" id="password_field"/></div>
+						
+						<div class="testee">
+						<h6 class="criar" onclick="alterar()">Esqueceu a senha?</h6>
+						
+						<h6 class="criar" onclick="cad()">Ainda não tenho conta?</h6>
+						</div>
+						<div class="teste1">
+						<button class="botao1" onclick="login()">Login</button>
+                        </div>
+                        </div>
+						
+						<div class="cadastro" id="cadastro1">
+						<div class="teste2"><img onclick="conta()" class="seta" src="images/seta.png"><h1 class="letra1"></br></h1></div>
+						<div class="teste"><h1 class="letra2">CADASTRE GRATUITAMENTE</h1></div>
+						<div class="teste"><h2 class="letra">NOME DE USUÁRIO</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">EMAIL</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">PASSWORD</h2><input class="name" type="password" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">CONFIRMAR PASSWORD</h2><input class="name" type="password" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">IDADE</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">CELULAR</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="testee">
+						<div class="texto"><input type="checkbox" class="check"> Li e concordo com os </div><div class="vermelho"> termos de condição de uso</div><div class="texto">.</div>
+						<h6 class="conta" onclick="conta()">Já tem um cadastro?</h6>
+						</div>
+						<div class="teste1">
+						<div class="botao1">Cadastrar</div>
+						</div>
+						</div>
+						
+
+						
+						
+						<div id="senha">
+						<div class="teste2"><img onclick="conta()" class="seta" src="images/seta.png"><h1 class="letra1"></br></h1></div>
+						<div class="teste"><h2 class="letra">USERNAME</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="teste"><h2 class="letra">NÚMERO</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="teste1">
+						<div class="botao1" onclick="confirmacao()">Enviar SMS</div>
+                        </div>
+                        </div>
+						
+						<div class="cadastro" id="conf">
+						<div class="teste2"><img onclick="conta()" class="seta" src="images/seta.png"><h1 class="letra1"></br></h1></div>
+						<div class="teste2"><h1 class="letra">INSIRA O CÓDIGO ENVIADO POR SMS</h1></div>
+						<div class="teste"><h2 class="letra">CÓDIGO</h2><input class="name" type="text" name="FirstName"></div>
+						<div class="testee">
+						<h6 class="conta" onclick="conta()">Não recebi nenhum SMS!</h6>
+						</div>
+						<div class="teste1">
+						<div class="botao1">Enviar</div>
+						</div>
+						</div>
+						
+						
+						
+                        </div>
+						<div class="direita">
+						<img class="fotod" src="images/iconelogin.png">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+	
+	    <footer><b>© COPYRIGHT. TODOS OS DIREITOS RESERVADOS.</b></BR>
+      NOS ACOMPANHE TAMBÉM NAS REDES SOCIAIS:
+	  <DIV CLASS="SOCIAL">
+                <img src="images/face.png" class="logosocial" alt="">
+                <img src="images/insta.png" class="logosocial" alt="">
+	  </DIV>
+
+    </footer>
+    
+    <!-- End Content -->
+    
+	<!-- START JAVASCRIPT -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Bootsnavs -->
+    <script src="js/bootsnav.js"></script>
+<script src="js/jsLogin.js"></script>
+</body>
+</html>

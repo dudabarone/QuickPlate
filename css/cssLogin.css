@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color:red;
+}
+
+.transparente{
+	color:transparent;
+}
+.direita{
+	padding-right:;
+	padding-top:4em;
+	width:38%;
+	float:right;
+}
+.fotod{
+	width:55em;
+	
+}
+
+.transparente:hover{
+	color:transparent;
+}
+
+#navbar-menu{
+	float:right;
+}
+
+.logo{
+	float:left;
+}
+
+.tudocad{    
+	background-color:rgba(0,0,0, 0.8);
+	text-align:justify;
+	padding-top:8%;
+	padding-bottom:5%;
+}
+
+.botao1 {
+	margin-top:0.5em;
+	height:3em;
+	text-align:center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width:10em;
+	background-color:transparent;
+    transition:0.5s;
+	color:#fff;
+	padding:0.5em;
+}
+
+.botao1:hover{    
+	border-color:black;
+    color:#f43438;
+    background:Black;
+}
+
+footer {
+	padding-top:2%;
+	padding-bottom:2%;
+	text-align:center;
+    color:#333;
+	background-color:rgb(255, 255, 255);
+	height:100%;
+}
+
+.cimacad{
+	background-attachment: fixed;
+	background-image: url('../images/login.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.logon{
+	color:#fff;
+	width:62%;
+	transition:0.5s;
+	padding:7%;
+	padding-bottom:10%;
+	color:#000;		
+	float:left;
+}
+
+.cad{
+}
+.testee{
+	width:65%;
+	float:left;
+}
+.teste1{
+	
+	float:right;
+}
+.teste{
+	padding-bottom:4.5em;
+}
+
+.letra{
+	float:left;
+	font-size:1em;
+	transition:0.5s;	
+	color:#fff;
+}
+
+.letra1{
+	margin-left:5em;
+	font-size:1em;
+	transition:0.5s;	
+	color:#fff;	
+}
+
+.letra2{
+	font-size:1em;
+	transition:0.5s;	
+	color:#fff;	
+}
+
+.name{
+	float:right;
+	width:65%;
+	height:3.5em;
+	transition:0.5s;
+	border-radius:5px;
+	border-color:#fff;
+	background-color:transparent;	
+	color:#fff;
+}
+
+.name:focus{
+	outline:none;
+	border-radius:10px;
+	border-color:#f43438;
+	background-color:rgba(255,255,255,0.3);
+}
+
+.criar{
+	text-align:right;
+	height:0.1em;
+	width:26em;
+	padding-top:0.5em;
+	transition:0.9s;
+	cursor:pointer;
+	color:#fff;
+}
+.conta{
+	text-align:left;
+	height:0.1em;
+	width:26em;
+	transition:0.9s;
+	cursor:pointer;
+	color:#fff;
+	
+}
+
+.criar:hover, .vermelho:hover, .conta:hover{
+	text-decoration: underline;
+}
+
+.texto{
+	float:left;
+	color:#fff;
+	font-size:1em;
+}
+
+.seta{
+	height:5%;
+	margin-top:0.5em;
+	float:left;
+	width:7%;
+	cursor:pointer;
+}
+
+.teste2{
+	padding-bottom:2em;
+}
+
+.vermelho{
+	cursor:pointer;
+	transition:0.5s;	
+	font-weight: bold;
+	margin-left:0.4em;
+	float:left;
+	color:#cc0000;
+	font-size:1em;
+}
+
+.logosocial{
+	cursor:pointer;
+	width:3%;
+}
